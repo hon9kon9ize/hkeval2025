@@ -1,0 +1,86 @@
+"81²ⁿ⁺³ / (27ⁿ⁺¹)² = ","3","3²ⁿ⁺⁶","3⁴ⁿ⁺⁸","3¹⁰ⁿ⁺¹⁴","B"
+"If m and n are constants such that (x+3)²+mx=(x-n)(x+1)+2n, then m=","-14.","-8.","4.","9.","A"
+"Let c be a constant. Solve the equation (x-c)(x-4c)=(3c-x)(x-4c).","x=2c","x=3c","x=c or x=3c","x=2c or x=4c","D"
+"If 2/u + 3/v = 4, then u = ","2v / (4v - 3)","2v / (3 - 4v)","3v / (4v - 2)","3v / (2 - 4v)","A"
+"The solution of 3y - 5 < 5y + 1 ≤ 11 is","-3 < y ≤ 2","-3 ≤ y < 2","-2 < y ≤ 3","-2 ≤ y < 3","A"
+"Let f(x) = x² - x + 1. If k is a constant, which of the following must be true?","f(k) = f(-k)","f(k) = f(1-k)","f(k+1) = f(k) + f(1)","f(k-1) = f(k) - f(1)","B"
+"Let g(x) = x² + ax + b, where a and b are constants. If g(x) is divisible by x + 2a, find the remainder when g(x) is divided by x - 2a.","-2a²","0","2a²","4a²","D"
+"A sum of $88 000 is deposited at an interest rate of 6% per annum for 4 years, compounded monthly. Find the interest correct to the nearest dollar.","$21 120","$23 098","$23 803","$23 825","C"
+"Let x, y and z be non-zero numbers. If x : y = 8 : 5 and 2x = 4z - 3y, then y : z = ","16 : 17","17 : 16","20 : 31","31 : 20","C"
+"If u varies directly as the square root of v and inversely as w, which of the following are true?
+I. u^2 varies directly as v and inversely as the square of w.
+II. v varies directly as w and inversely as the square root of u.
+III. w varies directly as the square root of v and inversely as u.","I and II only","I and III only","II and III only","I, II and III","B"
+"The radius of a solid hemisphere and the base radius of a solid right circular cylinder are equal. If the height of the circular cylinder is equal to its base diameter, then the ratio of the total surface area of the hemisphere to the total surface area of the circular cylinder is","1 : 2","1 : 3","2 : 3","2 : 5","A"
+"The diameter of a circle is 10 cm. The circle is divided into a major segment and a minor segment by a chord of length 8 cm. Find the area of the major segment correct to the nearest cm².","11 cm²","23 cm²","55 cm²","67 cm²","D"
+"It is given that PQRS is a rhombus. Let T be the point of intersection of PR and QS. If ∠QRT = θ, then PQ/ST = ","sinθ","cosθ","1/sinθ","1/cosθ","C"
+"The rectangular coordinates of the point Q are (4√3, -4). If Q is rotated clockwise about the origin through 90°, then the polar coordinates of its image are","(8, 60°)","(8, 120°)","(8, 210°)","(8, 240°)","D"
+"The straight line 12x - 5y = 60 cuts the x-axis and the y-axis at the points A and B respectively. Let P be a moving point in the rectangular coordinate plane such that AP = BP. Find the equation of the locus of P.","10x + 24y + 119 = 0","15x + 36y + 179 = 0","x² + y² - 5x + 12y = 0","x² + y² + 12x - 133 = 0","A"
+"The coordinates of the points P and Q are (10, -24) and (17, -7) respectively. Let C be the circle which passes through the origin, P and Q. Which of the following is true?","PQ is a diameter of C.","The area of C is 196π.","The point (16, -9) lies inside C.","The centre of C lies on the straight line 5x + 12y = 0.","C"
+"5♦2 is a 3-digit number, where ♦ is an integer from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 7.","1/5","1/7","1/9","1/10","D"
+"The mean weight of 60 actors and 40 actresses is 57 kg. If the mean weight of the actors is 63 kg, then the mean weight of the actresses is","48 kg","50 kg","53 kg","60 kg","A"
+"Consider the following positive integers:
+ 2 5 6 6 6 x x x y 
+If both the mean and the median of the above positive integers are 6, which of the following must be true?
+I. The mode of the above positive integers is 6.
+II. The least possible range of the above positive integers is 6.
+III. The greatest possible variance of the above positive integers is 6.","I only","II only","I and III only","II and III only","B"
+"Which of the following is the least?","(-345)^768","453^-786","(1/435)^867","(2/543)^876","C"
+"If log_4 y = 2x - 1 and (log_4 y)^2 = 20x - 31, then log_2 y =","1 or 2","2 or 4","3 or 7","6 or 14","D"
+"12B00CD00000E₁₆ = ","299 x 4^22 + 205 x 4^14 + 14.","300 x 4^22 + 222 x 4^14 + 15.","299 x 4^24 + 205 x 4^16 + 14.","300 x 4^24 + 222 x 4^16 + 15.","A"
+"Let z = 4 + 5i^10 - ki^15 + 6i^21 + 2ki^28, where k is a real number. If the real part and the imaginary part of z are equal, then the real part of z is","7.","13.","17.","25.","B"
+"Consider the following system of inequalities:
+2x + y ≥ 8
+2x + 3y ≥ 16
+4x + 3y ≤ 22
+Let R be the region which represents the solution of the above system of inequalities. If (x, y) is a point lying in R, then the least value of 7x + 6y is","32.","38.","41.","43.","B"
+"Let  aₙ be the nth term of a geometric sequence. It is given that a₁ = 8p², a₂ = 1 and a₃ = 27p, where p is a real number. Find a₄.","1/6","2/9","9/2","81/4","D"
+"For 0° ≤ x < 360°, how many roots does the equation sin²x = 6cos²x have?","2","3","4","5","C"
+"Let O be the origin. The coordinates of the points A and B are (a, 0) and (0, b) respectively, where a and b are positive numbers. If the circumcentre of ΔOAB lies on the straight line 4x+16y=17a, then a:b=","8:15","15:8","16:47","47:16","A"
+"If the first five digits and the last two digits of a seven-digit password are formed by a permutation of 1, 3, 5, 7, 9 and a permutation of 2, 8 respectively, how many different seven-digit passwords can be formed?","10","240","480","5040","B"
+"A box contains 2 white balls, 2 yellow balls and 3 red balls. A boy and a girl take turns to draw one ball randomly from the box with replacement until one of them draws a white ball or a yellow ball. The boy draws a ball first. Find the probability that the girl draws a white ball.","3/10","3/20","7/20","17/20","B"
+"In a test, the median of the test scores of a class of students is 30 marks. All the students fail in the test, so the test score of each student is adjusted such that each score is increased by 50% and then extra 8 marks are added. Let x marks be the median of the test scores of the class of students after the score adjustment. In the test, the standard score of a student before the score adjustment is -2 . Denote the standard score of this student after the score adjustment by z . Find x and z","x = 45 and z = -2","x = 45 and z = -1","x = 53 and z = -2","x = 53 and z = -1","C"
+"It is given that d is a real number. Let S₁ be a group of numbers {d - 6, d - 2, d - 1, d + 3, d + 5, d + 7} and S₂ be another group of numbers {d - 7, d - 5, d - 3, d + 1, d + 2, d + 6}. Which of the following is/are true?
+I. The means of S₁ and S₂ are equal.
+II. The standard deviations of S₁ and S₂ are equal.
+III. The inter-quartile ranges of S₁ and S₂ are equal.","I only","II only","I and III only","II and III only","D"
+"If  (a + 5b) / (7a + 2b) = 1 / (b + 3), then a = ","(4 - b) / (5b² + 13b)","(4 + b) / (5b² + 13b)","(5b² + 13b) / (4 - b)","(5b² + 13b) / (4 + b)","C"
+"2 / (5 - 4x) - 1 / (5 + 4x) = ","(5 + 4x) / (25 - 16x²)","(5 - 4x) / (25 - 16x²)","(5 + 12x) / (25 - 16x²)","(5 - 12x) / (25 - 16x²)","C"
+"4^(n + 2) * 3^(2n + 4) = ","6^(2n + 4)","6^(4n + 8)","12^(2n + 4)","12^(3n + 6)","A"
+"2x² + xy - y² + 4x + 4y =","(x + y)(2x + y - 4).","(x + y)(2x - y + 4).","(x - y)(2x + y - 4).","(x - y)(2x - y + 4).","B"
+"If c and d are constants such that (x + 2)(x + c) + 12 ≡ x(x + d) + 6c(x + 1), then d =","-13.","-3.","3.","17.","A"
+"The solution of x - 3 < -5 or (6 - x)/4 < 2 is","x < -2.","x > -2.","x = -2.","x ≠ -2.","D"
+"If y = 73.8 (correct to 3 significant figures), find the range of values of y.","73.7 ≤ y < 73.9","73.7 < y ≤ 73.9","73.75 ≤ y < 73.85","73.75 < y ≤ 73.85","C"
+"Let g(x) = 13 - 5x². If α is a constant, find g(1 - 3α).","8 - 45α²","8 + 45α²","8 - 30α + 45α²","8 + 30α - 45α²","D"
+"Let h(x) = ax⁶ + 16x³ + b, where a and b are constants. If h(x) is divisible by 2x - 3, find the remainder when h(x) is divided by 2x + 3.","-108","-54","54","108","A"
+"The marked price of a jacket is 60% above its cost. A profit of $104 is made by selling the jacket at a discount of 25% on its marked price. Find the cost of the jacket.","$416","$520","$728","$832","B"
+"Let aₙ be the nth term of a sequence. If a₆ = 23 , a₈ = 60 and aₙ₊₂ = aₙ₊₁ + aₙ for any positive integer n, then a₃ = ","4","5","9","14","B"
+"The length of a side of a solid cube is 60 cm. The volume of a solid right circular cylinder is equal to the volume of the cube while the curved surface area of the circular cylinder is equal to the total surface area of the cube. Find the base radius of the circular cylinder.","20 cm","30 cm","76 cm","172 cm","A"
+"It is given that ABCD is a rhombus. Denote the point of intersection of AC and BD by E. Which of the following must be true?
+I. AE = BE
+II. AE/AC = BE/BD
+III. AE² + BE² = CD²","I and II only","I and III only","II and III only","I, II and III","C"
+"The rectangular coordinates of the point P are (√2, -√2). If P is rotated anticlockwise about the origin through 90°, then the polar coordinates of its image are","(√2, 45°)","(√2, 225°)","(2, 45°)","(2, 225°)","C"
+"Find the constant a such that the straight lines 2x+(a+3)y-5=0 and ax-4y+1=0 are perpendicular to each other.","-6","-5","-2","4","A"
+"The equations of the straight lines l and L are 9x+12y-37=0 and 12x+16y-85=0 respectively. l cuts the x-axis at the point A while L cuts the y-axis at the point B. Let P be a moving point in the rectangular coordinate plane such that the perpendicular distance from P to l is equal to the perpendicular distance from P to L. Denote the locus of P by Г. Which of the following are true?
+I. Г is parallel to L.
+II. Г is perpendicular to AB.
+III. Г passes through the mid-point of AB.","I and II only","I and III only","II and III only","I, II and III","B"
+"The equations of the circles C₁ and C₂ are x²+y²+7x-4y+15=0 and 2x²+2y²-2x-16y-17=0 respectively. Let G₁ and G₂ be the centres of C₁ and C₂ respectively. Denote the origin by O. Which of the following are true?
+I. ΔOG₁G₂ is an equilateral triangle.
+II. The line segment OG₁ lies inside C₂.
+III. C₁ and C₂ intersect at two distinct points.","I and II only","I and III only","II and III only","I, II and III","C"
+"A box contains five cards numbered 1, 2, 3, 4 and 5 respectively while another box contains four cards numbered 6, 7, 8 and 9 respectively. If a number is randomly drawn from each box, find the probability that the product of the two numbers drawn is divisible by 4.","1/5","3/10","7/20","9/20","D"
+"There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $31 530 while the mean salary of the part-time employees is $21 525 . Find the mean salary of these employees of the company.","$23 526","$25 527","$27 528","$29 529","A"
+"1011001011001011₂ = ","11×2⁸ + 11×2⁵ + 11","11×2¹² + 11×2⁶ + 11","11×2¹³ + 11×2⁷ + 11","11×2¹⁴ + 11×2⁸ + 11","B"
+"The L.C.M. of a⁴b²c, a³b⁴c and a²b⁵c² is","a²b²c.","a²b²c².","a⁴b⁵c.","a⁴b⁵c².","D"
+"If k is a real number, then the real part of  ( i / (k - i) ) + ( 2 / (k + i) ) is","(2k + 1) / (k² - 1)","(2k - 1) / (k² + 1)","(k + 2) / (k² - 1)","(k - 2) / (k² + 1)","B"
+"Let T(n) be the nth term of an arithmetic sequence. If T(11) = 83 and T(25) + T(30) = 463, find the least value of k such that T(1) + T(2) + T(3) + ... + T(k) > 4 × 10⁵.","299","300","944","945","B"
+"The base of the right pyramid VABCD is the square ABCD. Let θ be the angle between ΔABV and ΔBCV. If AB:AV = 5:4, then cosθ = ","-25/39","-17/33","-9/16","0","A"
+"The equations of the straight lines L₁ and L₂ are 3x-4y+k=0 and 4x+3y-k=0 respectively, where k is a positive constant. It is given that L₁ cuts the x-axis at the point P. Denote the point of intersection of L₁ and L₂ by Q. If R is a point lying on L₂ such that the in-centre of ΔPQR lies on the x-axis, then the x-coordinate of R is","-7k","-k","k","7k","C"
+"There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?","3003","15015","20475","360360","B"
+"It is given that n is an integer. Let u, v and w be the standard deviation, the median and the range of the group of numbers {1 - 9n, 3 - 9n, 4 - 9n, 5 - 9n, 7 - 9n} respectively. Which of the following must be true?
+
+I. u = 2
+II. v < 4
+III. w > 6","I only","II only","I and III only","II and III only","A"

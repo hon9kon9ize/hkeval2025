@@ -1,0 +1,21 @@
+"Which of the following is correct?","Information process: Data collection, Example: Creating a statistical chart","Information process: Data preparation, Example: Validating questionnaries before input","Information process: Data processing, Example: Sorting qustionnaires for data entry","Information process: Data organisation, Example: Designing an online questionnaire","B"
+"What is the output of the following algorithm for the input 'Y', 'N', 'Y', 'N', 'Y'?
+
+S ← 0 
+FOR i FROM 1 TO 5 DO
+    INPUT CH
+    IF CH = 'Y' THEN
+        S ← S + 1
+    ELSE
+        OUTPUT '#'
+OUTPUT S","1#2#3","1#1#1","##3","###","C"
+"Which of the following describe(s) the URL, https://www.abc.edu.hk/en/?
+(1) en is a path on the web server.
+(2) The domain name is abc.
+(3) The web site is registered as an educational institution in Hong Kong.","(1) only","(2) only","(1) and (3) only","(2) and (3) only","C"
+"A computer receives the three data sequences, shown below. Each sequence includes a parity bit. Two of the sequences are found to be corrupted during transmission.
+First: 0101 0111
+Second: 1101 0101
+Third: 1110 1011
+Which of the following best describes the situation?","Corrupted data sequence: The first and second, Parity Check: Even","Corrupted data sequence: The second and third, Parity Check: Even","Corrupted data sequence: The first and second, Parity Check: Odd","Corrupted data sequence: The second and third, Parity Check: Odd","A"
+"What is the importance of a problem definition in problem-solving?","The design and the scope of work can be set.","Problem analysis can be skipped.","There is no need to define sub-problems.","An error-free algorithm will be developed.","A"

@@ -1,0 +1,8 @@
+tenacity
+openai
+anthropic
+sensenova
+pandas
+qianfan
+redis==5.0.8
+volcengine-python-sdk
