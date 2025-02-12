@@ -35,7 +35,7 @@ class OpenAIInference(Inference):
             temperature,
             max_tokens,
         )
-        
+
         self.client = OpenAI(api_key=api_key, base_url=api_url)
 
     @retry(stop=stop_after_attempt(8), wait=wait_chain(*wait_times))
@@ -45,8 +45,7 @@ class OpenAIInference(Inference):
         ]
 
         if self.system_prompt:
-            messages = [
-                {"role": "system", "content": self.system_prompt}] + messages
+            messages = [{"role": "system", "content": self.system_prompt}] + messages
 
         response = self.client.chat.completions.create(
             model=self.model_name,
@@ -57,6 +56,7 @@ class OpenAIInference(Inference):
         )
 
         return response.choices[0].message.content.strip()
+
 
 # from openai import AzureOpenAI
 # class OpenAIInference(Inference):
@@ -79,12 +79,12 @@ class OpenAIInference(Inference):
 #             temperature,
 #             max_tokens,
 #          )
-    
+
 #         endpoint = "https://cantonese-llm-sin.openai.azure.com/"
-#         self.client = AzureOpenAI(api_key=api_key, 
-#                                 azure_endpoint=endpoint, 
+#         self.client = AzureOpenAI(api_key=api_key,
+#                                 azure_endpoint=endpoint,
 #                                 api_version="2024-05-01-preview",)
-        
+
 #     @retry(stop=stop_after_attempt(8), wait=wait_chain(*wait_times))
 #     def infer(self, prompt):
 #         messages = [
@@ -94,7 +94,7 @@ class OpenAIInference(Inference):
 #         if self.system_prompt:
 #             messages = [
 #                 {"role": "system", "content": self.system_prompt}] + messages
-            
+
 #         response = self.client.chat.completions.create(
 #             model=self.model_name,
 #             messages=messages,

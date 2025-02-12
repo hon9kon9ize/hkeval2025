@@ -140,3 +140,4 @@ tmp
 jed_workspace
 sh_archive
 *.sh
+*.out

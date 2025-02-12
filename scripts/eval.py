@@ -44,8 +44,7 @@ def gen_prompt(train_df, subject, choices, k=-1):
         subject = "geography"
 
     prompt = "The following are multiple choice questions (with answers) about {}.{}\n\n".format(
-        format_subject(subject),
-        extra_prompt
+        format_subject(subject), extra_prompt
     )
 
     if k == -1:
@@ -71,7 +70,7 @@ def compute_metric(output_filename):
             pred_answers = run_results[task]["pred_answers"]
             gold_answers = run_results[task]["gold_answers"]
             for pred, gold in zip(pred_answers, gold_answers):
-                if len(pred) > 0 and pred[0] == gold:
+                if len(pred) > 0 and pred[0].upper() == gold.upper():
                     acc += 1
             line = "%s: %.4f" % (task, acc / len(gold_answers))
             print(line)
@@ -107,23 +106,6 @@ def main(args):
             system_prompt=system_prompt,
             temperature=0.0,
         )
-    elif (
-        "gpt" in args.model or "siliconflow/" in args.model #or args.model == "4.0Ultra"
-    ):
-        assert args.api_key is not None, "API key is required for OpenAI"
-        model_name = args.model
-
-        if "siliconflow/" in args.model:
-            model_name = args.model.replace("siliconflow/", "")
-
-        model = OpenAIInference(
-            model_name,
-            args.api_key,
-            batch_size=1,
-            api_url=args.model_url,
-            system_prompt=system_prompt,
-            temperature=0.0,
-        )
     elif "claude" in args.model:
         assert args.api_key is not None, "API key is required for Anthropic"
         model = AnthropicInference(
@@ -151,6 +133,27 @@ def main(args):
             system_prompt=system_prompt,
             temperature=0.0,
         )
+    elif (
+        "gpt" in args.model
+        or "siliconflow/" in args.model  # or args.model == "4.0Ultra"
+        or "deepseek" in args.model
+        or args.model_url is not None
+    ):
+        assert args.api_key is not None, "API key is required for OpenAI"
+        model_name = args.model
+
+        if "siliconflow/" in args.model:
+            model_name = args.model.replace("siliconflow/", "")
+
+        print(model_name, args.model_url, args.api_key)
+        model = OpenAIInference(
+            model_name,
+            args.api_key,
+            batch_size=1,
+            api_url=args.model_url,
+            system_prompt=system_prompt,
+            temperature=0.0,
+        )
     elif "/" in args.model:  # local / HF models
         model = LocalInference(
             args.model,
@@ -173,11 +176,16 @@ def main(args):
         raise ValueError("model not supported")
 
     if "mmlu" in task_name:
-        import glob 
+        import glob
         from os.path import basename, splitext
-        if os.path.exists(f"outputs/checkpoint_{task_name}_{args.model.replace('/', '_')}"):
 
-            files = glob.glob(f"outputs/checkpoint_{task_name}_{args.model.replace('/', '_')}/*.json")
+        if os.path.exists(
+            f"outputs/checkpoint_{task_name}_{args.model.replace('/', '_')}"
+        ):
+
+            files = glob.glob(
+                f"outputs/checkpoint_{task_name}_{args.model.replace('/', '_')}/*.json"
+            )
 
             if len(files) == 0:
                 mmlu_task_id = 0
@@ -185,14 +193,15 @@ def main(args):
             elif len(files) == len(tasks):
                 print("All tasks have been tested")
                 return
-            
+
             else:
-                files = sorted(files, key=lambda x: int(splitext(basename(x))[0].split("_")[0]))
+                files = sorted(
+                    files, key=lambda x: int(splitext(basename(x))[0].split("_")[0])
+                )
                 last_file = splitext(basename(files[-1]))[0]
                 last_task = int(last_file.split("_")[0])
 
                 # tasks = tasks[last_task+1:]
-                
 
                 for i, file in enumerate(files):
                     task = tasks[i]
@@ -201,15 +210,13 @@ def main(args):
 
                     run_results[task] = run_result_task
 
-                
-                tasks = tasks[last_task+1:]
-                mmlu_task_id = last_task+1
+                tasks = tasks[last_task + 1 :]
+                mmlu_task_id = last_task + 1
                 print(f"Continue testing from task {tasks[0]}")
 
         else:
             os.mkdir(f"outputs/checkpoint_{task_name}_{args.model.replace('/', '_')}")
             mmlu_task_id = 0
-
 
     for task in tasks:
         print("Testing %s ..." % task)
@@ -237,13 +244,17 @@ def main(args):
         pred_answers = model.batch_infer(inputs)
         pred_answers = [
             # b[0] if len(b) > 0 else "" # only get first character as answer
-            b for b in pred_answers
-        ]  
+            b
+            for b in pred_answers
+        ]
         gold_answers = [record["answer"] for record in records]
         run_results[task] = {"pred_answers": pred_answers, "gold_answers": gold_answers}
-        
+
         if "mmlu" in task_name:
-            with open(f"outputs/checkpoint_{task_name}_{args.model.replace('/', '_')}/{mmlu_task_id}_{task}.json", "w") as f:
+            with open(
+                f"outputs/checkpoint_{task_name}_{args.model.replace('/', '_')}/{mmlu_task_id}_{task}.json",
+                "w",
+            ) as f:
                 json.dump(run_results[task], f, ensure_ascii=False, indent=2)
             mmlu_task_id += 1
 
@@ -264,6 +275,7 @@ model_names = [
     "ERNIE-4.0-8K",  # Baidu
     "4.0Ultra",  # xFyun
     "random",
+    "Qwen/Qwen2-72B-Instruct",  # Local API
 ]
 
 model_types = [

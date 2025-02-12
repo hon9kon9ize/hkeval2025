@@ -34,11 +34,10 @@ def main(args):
     if "sentiment" in task_name:
         max_tokens = 4
         random_output = ["Positive", "Negative", "Neutral"]
-        
+
     else:
         max_tokens = 1024
         random_output = ["Dummy output 1", "Dummy output 2"]
-
 
     if "gemini" in args.model:
         assert args.api_key is not None, "API key is required for Google vertex AI"
@@ -46,25 +45,6 @@ def main(args):
             args.model,
             args.api_key,
             batch_size=1,
-            temperature=0.0,
-            max_tokens=max_tokens,
-            stop_sequences=[],
-        )
-    elif (
-        "gpt" in args.model or "siliconflow/" in args.model
-    ):
-        assert args.api_key is not None, "API key is required for OpenAI"
-
-        model_name = args.model
-
-        if "siliconflow/" in args.model:
-            model_name = args.model.replace("siliconflow/", "")
-
-        model = OpenAIInference(
-            model_name,
-            args.api_key,
-            batch_size=1,
-            api_url=args.model_url,
             temperature=0.0,
             max_tokens=max_tokens,
             stop_sequences=[],
@@ -99,6 +79,28 @@ def main(args):
             max_tokens=max_tokens,
             stop_sequences=[],
         )
+    elif (
+        "gpt" in args.model
+        or "siliconflow/" in args.model  # or args.model == "4.0Ultra"
+        or "deepseek" in args.model
+        or args.model_url is not None
+    ):
+        assert args.api_key is not None, "API key is required for OpenAI"
+
+        model_name = args.model
+
+        if "siliconflow/" in args.model:
+            model_name = args.model.replace("siliconflow/", "")
+
+        model = OpenAIInference(
+            model_name,
+            args.api_key,
+            batch_size=1,
+            api_url=args.model_url,
+            temperature=0.0,
+            max_tokens=max_tokens,
+            stop_sequences=[],
+        )
     elif "/" in args.model:  # local / HF models
         model = LocalInference(
             args.model,
@@ -115,7 +117,6 @@ def main(args):
             batch_size=batch_size,
             temperature=0.1,
         )
-
 
     if model is None:
         raise ValueError("model not supported")
@@ -160,8 +161,10 @@ def main(args):
         test_filename = f"{src_lang}_{tgt_lang}_test.json"
 
     if "summarization" in task_name or "translation" in task_name:
-        
-        test_df = pd.read_json(os.path.join(data_dir, test_filename), lines=is_line_file)
+
+        test_df = pd.read_json(
+            os.path.join(data_dir, test_filename), lines=is_line_file
+        )
         test_df.rename(columns={0: "text"}, inplace=True)
         inputs = [row[text_col_name] for i, row in test_df.iterrows()]
         responses = model.batch_infer([prompt_template.format(text) for text in inputs])
@@ -179,48 +182,49 @@ def main(args):
         end_time = time.time()
         print("total run time %.2f" % (end_time - start_time))
 
-
     if "sentiment" in task_name:
         from benchmark_tasks import SENTIMENT_TASKS
         import json
-        
+
         run_results = {}
         for sentiment_task in SENTIMENT_TASKS:
             test_filename = f"sentiment_{sentiment_task}.json"
             test_df = pd.read_json(os.path.join(data_dir, test_filename), lines=True)
-            
+
             prompt_template_task = prompt_template.format(
                 sentiment_example1=test_df.iloc[0].text,
                 sentiment_target1=test_df.iloc[0].sentiment,
             )
-            
+
             test_df = test_df.iloc[1:]
-            
+
             inputs = [row[text_col_name] for i, row in test_df.iterrows()]
-            responses = model.batch_infer([prompt_template_task.format(text) for text in inputs])
-            
+            responses = model.batch_infer(
+                [prompt_template_task.format(text) for text in inputs]
+            )
+
             # for text in inputs:
             #     print(prompt_template.format(text))
-            
-            result = [
-                b for b in responses
-            ]
-            
+
+            result = [b for b in responses]
+
             gold_answers = [row.sentiment for i, row in test_df.iterrows()]
-            
-            run_results[sentiment_task] = {"pred_answers": result, "gold_answers": gold_answers}
-            
+
+            run_results[sentiment_task] = {
+                "pred_answers": result,
+                "gold_answers": gold_answers,
+            }
+
         with open(output_filename.replace(".csv", ".json"), "w") as f:
             json.dump(run_results, f, ensure_ascii=False, indent=2)
-            
-        
+
         output_acc_filename = output_filename.replace(".csv", "_result.txt")
         with open(output_acc_filename, "w") as f_out:
             with open(output_filename.replace(".csv", ".json"), "r") as f:
                 run_results = json.load(f)
             total_acc = 0
             total_num = 0
-            
+
             for task in SENTIMENT_TASKS:
                 acc = 0
                 pred_answers = run_results[task]["pred_answers"]
@@ -237,14 +241,9 @@ def main(args):
             print(line)
             f_out.write(line + "\n")
             f_out.close()
-            
+
         end_time = time.time()
         print("total run time %.2f" % (end_time - start_time))
-            
-            
-            
-            
-            
 
 
 model_names = [

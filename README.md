@@ -19,7 +19,7 @@ python scripts/eval.py \
 | categories | CantonesLLMChat-v0.5-6b | Claude Sonnet 3.5 | GPT4o-Mini | Gemini 1.5 Flash |
 | --- | --- | --- | --- | --- |
 | average | 0.5804 | 0.7768 | 0.6562 | 0.6830 |
-| culture_and_practices | 0.5571 | 0.8286 | 0.7000 | 0.7714 |
+| life_in_hk | 0.5571 | 0.8286 | 0.7000 | 0.7714 |
 | food | 0.5741 | 0.7037 | 0.6481 | 0.6296 |
 | history_and_landmarks | 0.6071 | 0.8214 | 0.6786 | 0.6964 |
 | langauge_and_expressions | 0.5909 | 0.7273 | 0.5682 | 0.5909 |

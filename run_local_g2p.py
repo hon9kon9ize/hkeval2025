@@ -8,7 +8,7 @@ model_list = [
     "google/gemma-2-27b-it",
     "01-ai/Yi-1.5-6B-Chat",
     "01-ai/Yi-1.5-9B-Chat",
-    # "01-ai/Yi-1.5-34B-Chat",
+    "01-ai/Yi-1.5-34B-Chat",
     "Qwen/Qwen2-7B-Instruct",
     "meta-llama/Meta-Llama-3.1-8B-Instruct",
     "mistralai/Mistral-Nemo-Instruct-2407",

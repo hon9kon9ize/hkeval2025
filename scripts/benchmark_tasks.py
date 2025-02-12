@@ -142,7 +142,7 @@ DSE_TASKS = [
 DSE_SYSTEM_PROMPT = "Follow the given examples and answer the question. the question is about Hong Kong DSE. you should only return the answer: A, B, C, or D."
 
 CULTURAL_TASKS = [
-    "culture_and_practices",
+    "life_in_hk",
     "food",
     "history_and_landmarks",
     "langauge_and_expressions",
@@ -169,7 +169,7 @@ ENG_YUE_ZERO_SHOT_RANSLATION_PROMPT = """將以下繁體中文句子翻譯成香
 只需回覆翻譯部份，不需要解釋"""
 
 
-ENG_YUE_FEW_SHOTS_RANSLATION_PROMPT ="""參考以下例子，將以下英文句字翻譯成香港的廣東話：
+ENG_YUE_FEW_SHOTS_RANSLATION_PROMPT = """參考以下例子，將以下英文句字翻譯成香港的廣東話：
 
 例子1：英文: {src_example1} 廣東話: {tgt_example1}
 例子2：英文: {src_example2} 廣東話: {tgt_example2}
@@ -250,10 +250,7 @@ YUE_ZH_FEW_SHOTS_RANSLATION_PROMPT = """參考以下例子，將以下廣東話�
 只需回覆翻譯部份，不需要解釋"""
 
 
-SENTIMENT_TASKS = [
-    "openrice",
-    "facebook"
-]
+SENTIMENT_TASKS = ["openrice", "facebook"]
 
 SENTIMENT_SYSTEM_PROMPT = """Follow the given examples and analyze the sentiment of the Cantonese text. You should only return the answer: Positive, Negative or Neutral.
 
@@ -264,7 +261,6 @@ Sentiment: {sentiment_target1}
 Input: {{}}
 
 Sentiment:"""
-
 
 
 benchmark_tasks = {
