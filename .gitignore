@@ -141,3 +141,4 @@ jed_workspace
 sh_archive
 *.sh
 *.out
+phonetics-g2p-label

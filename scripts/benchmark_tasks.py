@@ -146,7 +146,7 @@ CULTURAL_TASKS = [
     "food",
     "history_and_landmarks",
     "langauge_and_expressions",
-    "tatsujin",
+    "local_knowledge",
 ]
 CULTURAL_SYSTEM_PROMPT = "Follow the given examples and answer the question. the question is about Hong Kong. Only return the answer: A, B, C, or D. DO NOT EXPLAIN."
 

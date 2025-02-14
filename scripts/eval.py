@@ -40,7 +40,7 @@ def gen_prompt(train_df, subject, choices, k=-1):
     if k == 0:
         extra_prompt = " DO NOT EXPLAIN."
 
-    if subject == "tatsujin":
+    if subject == "local_knowledge":
         subject = "geography"
 
     prompt = "The following are multiple choice questions (with answers) about {}.{}\n\n".format(
@@ -145,7 +145,6 @@ def main(args):
         if "siliconflow/" in args.model:
             model_name = args.model.replace("siliconflow/", "")
 
-        print(model_name, args.model_url, args.api_key)
         model = OpenAIInference(
             model_name,
             args.api_key,
