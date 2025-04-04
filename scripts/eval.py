@@ -12,6 +12,7 @@ from models import (
     RandomInference,
     BaiduInference,
     VolcEngineInference,
+    GeminiInference,
 )
 
 
@@ -99,7 +100,7 @@ def main(args):
 
     if "gemini" in args.model:
         assert args.api_key is not None, "API key is required for Google vertex AI"
-        model = VertexAIInference(
+        model = GeminiInference(
             args.model,
             args.api_key,
             batch_size=1,

@@ -5,3 +5,4 @@ from .random import RandomInference
 from .vertexai import VertexAIInference
 from .baidu import BaiduInference
 from .volcengine import VolcEngineInference
+from .gemini import GeminiInference

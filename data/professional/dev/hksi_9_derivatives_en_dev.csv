@@ -1,9 +1,3 @@
-"A company seeking to lock in an interest rate obtains a quote of 5.00% for a 3-6 Forward Rate Agreement (FRA) from their bank. What does this FRA offer the company?","5.00% fixed interest rate starting in 3 months for a 3-month period.","5.00% fixed interest rate starting in 6 months for a 3-month period.","5.00% fixed interest rate starting in 3 months for a 6-month period.","5.00% fixed interest rate starting in 3 months for a 9-month period.","A"
-"Which of the following statements is INCORRECT in relation to a stop-loss/gain order?","Stop-loss orders are commonly used for risk management purposes.","Stop-loss orders must be executed at exactly the price instructed.","Stop-gain orders will be executed at the best price available once the market price reaches the specified level.","Stop-gain orders can be used to lock in profit before market movements erode the profit.","B"
-"A fund manager holds shares of a number of listed gold producing companies in his portfolio. The manager has reviewed market conditions and believes, whilst the performance of these companies will be satisfactory, the price of gold is very likely to fall in the near term. How could the fund manager BEST use derivatives to hedge this risk?","Buy stock futures contracts of the specific gold producers.","Sell gold futures contracts.","Buy gold call options.","Enter a commodity swap.","B"
-"Which option trading techniques would be MOST APPROPRIATE for an investor who holds the view that volatility will increase?
-I Long straddle.
-II Short put options.
-III Long call options.
-IV Short strangle.","I and II only","I and III only","II and IV only","III and IV only","B"
-"What is the name given to an agreement to buy or sell a quantity of currency for delivery at sometime in the future at an exchange rate fixed at the time of the agreement?","Currency forward.","Foreign exchange swap.","Currency swap.","Currency option.","A"
+version https://git-lfs.github.com/spec/v1
+oid sha256:d58f2d80b95f411ccafc6113fc10fb0e41d041eee33d67ae7cfdb4bd7884fbcc
+size 1918

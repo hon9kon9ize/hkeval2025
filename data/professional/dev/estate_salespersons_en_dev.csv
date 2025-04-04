@@ -1,24 +1,3 @@
-"FILL IN THE BLANK:
-Please choose the correct answer from A to E.
-According to the Estate Agency Agreement (Form 3), the duties of an estate agent acting for a vendor in the sale of a residental property include marketing the property, obtaining information about the property for the vendor and conducting ______________.","an investigation of the purchaser’s background","an inspection of the property","a bankruptcy search of the purchaser","negotiation with interested purchasers","D"
-"Calculate the stamp duty chargeable for a tenancy agreement for a domestic property (including its counterpart) based on the following terms:
-Term:    five years
-Rent:    $100,000 per month
-Rent-free period:  first two months
-Option to renew:  a further term of three years at $120,000 per month","100","105","3005","11605","D"
-"The purchaser client of an estate agent is about to enter into a provisional agreement for sale and purchase of a property owned by a private limited Hong Kong company. The client wants to check whether the property is subject to any mortgages or charges. Which of the following documents may contain the above information?
-(i) the memorandum of association of the vendor company
-(ii) an up-to-date land search of the property at the Land Registry
-(iii) an up-to-date search of the Mortgage or Charge Details/Statement of Particulars of Charge filed by the vendor company with the Companies Registry
-(iv) the Certificate of Incorporation of the vendor company
-(v) the Business Registration Certificate of the vendor company","(i) and (ii) only","(ii) and (iii) only","(ii) and (v) only","(i), (iii) and (iv) only","B"
-"Which of the following are measures that the manager of an estate agency firm should adopt in order to help prevent or detect money laundering and/or financing of terrorism?
-(i) Take note of the statements issued by the Financial Action Task Force on Money Laundering from time to time, and increase scrutiny and enhance due diligence in respect of transactions associated with countries or districts considered to be at higher risk of money laundering or financing of terrorism.
-(ii) Examine the prescribed estate agency agreement to ensure that the name of the corporate client’s signatory and the particulars of his identity or travel document have been properly recoded when arranging for the sale and purchase of a property for a corporate client.
-(iii) State in the prescribed estate agency agreement the address of the property transacted, the transaction price, and the date of the signing of the provisional agreement for sale and purchase.
-(iv) Retain the prescribed estate agency agreement for at least five years from the date of the signing of the provisional agreement for sale and purchase.
-(v) Provide copies of all estate agency agreements to the police for record keeping.","(i), (ii) and (iv) only","(i), (iii) and (iv) only","(ii), (iii) and (v) only","(i), (ii), (iii) and (iv) only","D"
-"Mr. Chan, a vendor, has entered into a provisional agreement for sale and purchase with a purchaser to sell his residential property. The transaction is handled by ABC Estate Agency. The provisional agreement for sale and purchase contains a clause which provides that Mr. Chan agrees to pay commission to ABC Estate Agency. However, Mr. Chan refuses to pay the commission. ABC Estate Agency intends to take legal action to recover the outstanding commission. According to the Estate Agents Ordinance, which of the following must ABC Estate Agency have done before it may sue Mr. Chan?
-(i) ABC Estate Agency must have first registered the provisional agreement for sale and purchase against the property in the Land Registry.
-(ii) ABC Estate Agency must have first entered into an Estate Agency Agreement (Form 3) with Mr. Chan.
-(iii) ABC Estate Agency must have first submitted an Estate Agency Agreement (Form 3) to the Estate Agents Authority for approval.","(i) only","(ii) only","(iii) only","(ii) and (iii) only","B"
+version https://git-lfs.github.com/spec/v1
+oid sha256:481e2e3a27ba1a9fcf0f4710a2f6560bda8a7de567e0c7eb474a53b215d7c899
+size 3975
